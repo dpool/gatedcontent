@@ -1,0 +1,34 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Dpool\Gatedcontent\:
+    resource: '../Classes/*'
+
+  cache.tokencache:
+    class: TYPO3\CMS\Core\Cache\Frontend\FrontendInterface
+    factory: ['@TYPO3\CMS\Core\Cache\CacheManager', 'getCache']
+    arguments: ['tokencache']
+
+  jwtTokenConfigurationService:
+    class: Dpool\Gatedcontent\Service\Token\JwtTokenConfiguration
+
+  jwtTokenConfiguration:
+    class: Lcobucci\JWT\Configuration
+    factory: ['@jwtTokenConfigurationService', 'getConfiguration']
+
+  tokenService:
+    class: Dpool\Gatedcontent\Service\Token\JwtTokenService
+    arguments: [ '@jwtTokenConfiguration' ]
+    public: true
+
+  Dpool\Gatedcontent\Controller\GateController:
+    calls:
+      - injectCache: ['@cache.tokencache']
+      - injectTokenService: ['@tokenService']
+      - injectUserDataRepository: ['@Dpool\Gatedcontent\Domain\Repository\UserDataRepository']
+      - injectFileRepository: ['@TYPO3\CMS\Core\Resource\FileRepository']
+      - injectPersistenceManager: ['@TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager']
+      - injectMailService: ['@Dpool\Gatedcontent\Service\MailService']

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-09-30T14:50:57Z" product-name="gatedcontent">
+        <header/>
+        <body>
+            <trans-unit id="tx_gatedcontent_domain_model_userdata">
+                <target>Leads</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_domain_model_userdata.identifier">
+                <target>Bezeichner für geschützten Inhalt</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_domain_model_userdata.first_name">
+                <target>Vorname</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_domain_model_userdata.last_name">
+                <target>Nachname</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_domain_model_userdata.company">
+                <target>Firma</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_domain_model_userdata.telephone">
+                <target>Telefon</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_domain_model_userdata.email">
+                <target>E-Mail</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_domain_model_userdata.zip">
+                <target>PLZ</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_domain_model_userdata.city">
+                <target>Stadt</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_domain_model_userdata.newsletter_subscription">
+                <target>Für den Newsletter angemeldet</target>
+            </trans-unit>
+
+            <trans-unit id="tx_gatedcontent_header">
+                <target>Überschrift</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_subheader">
+                <target>Zwischenüberschrift</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_description">
+                <target>Beschreibung</target>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent_image">
+                <target>Bild</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

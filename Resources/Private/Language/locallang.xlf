@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-09-30T14:50:57Z" product-name="gatedcontent">
+        <header/>
+        <body>
+            <trans-unit id="tx_gatedcontent.form.submit">
+                <source>Submit</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.form.required">
+                <source>* Required fields</source>
+            </trans-unit>
+
+            <trans-unit id="tx_gatedcontent.form.field.firstName">
+                <source>First name</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.form.field.lastName">
+                <source>Last name</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.form.field.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.form.field.company">
+                <source>Company</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.form.field.telephone">
+                <source>Telephone</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.form.field.zip">
+                <source>Zip</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.form.field.city">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.linkTitle">
+                <source>Link</source>
+            </trans-unit>
+
+            <trans-unit id="tx_gatedcontent.error.validation">
+                <source>An error has occurred. Please check your entries.</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.acceptPrivacyPolicy.error.1361959228">
+                <source>You have to agree to the privacy policy.</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.email.error.1221560718">
+                <source>The email address is required.</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.email.error.1221559976">
+                <source>Please provide a valid email address.</source>
+            </trans-unit>
+
+            <trans-unit id="tx_gatedcontent.modal.doubleOptInConfirmation.header">
+                <source>Dear visitor,</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.doubleOptInConfirmation.message">
+                <source><![CDATA[Thank you for your interest in our content. <br> You will shortly receive an email containing a link to confirm your data.]]></source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.doubleOptInConfirmation.footer">
+                <source>Your Website Team</source>
+            </trans-unit>
+
+            <trans-unit id="tx_gatedcontent.modal.adminConfirmationPending.header">
+                <source>Dear visitor,</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.adminConfirmationPending.message">
+                <source><![CDATA[Thank you for confirming your data. <br> Your requested access needs to be confirmed by the website admin. You will then receive an email containing the link to the document(s).]]></source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.adminConfirmationPending.footer">
+                <source>Your Website Team</source>
+            </trans-unit>
+
+            <trans-unit id="tx_gatedcontent.modal.adminConfirmationApproved.header">
+                <source>Dear admin,</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.adminConfirmationApproved.message">
+                <source><![CDATA[You granted successfully access to the requested content. <br> The visitor will now receive the mail containing the link to the gated content.]]></source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.adminConfirmationApproved.footer">
+                <source>Your Website Team</source>
+            </trans-unit>
+
+            <trans-unit id="tx_gatedcontent.modal.downloadSuccess.header">
+                <source>Dear visitor,</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.downloadSuccess.message">
+                <source><![CDATA[The download of the requested file has started. Please check your download folder.]]></source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.downloadSuccess.footer">
+                <source>Your Website Team</source>
+            </trans-unit>
+
+            <trans-unit id="tx_gatedcontent.modal.error.missingFile.header">
+                <source>Dear visitor,</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.error.missingFile.message">
+                <source><![CDATA[The requested file does no longer exist. <br> Please check the link or contact the support team.]]></source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.error.missingFile.footer">
+                <source>Your Website Team</source>
+            </trans-unit>
+
+            <trans-unit id="tx_gatedcontent.modal.error.invalidToken.header">
+                <source>Dear visitor,</source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.error.invalidToken.message">
+                <source><![CDATA[The provided token is not valid.<br> Please fill out the form again.]]></source>
+            </trans-unit>
+            <trans-unit id="tx_gatedcontent.modal.error.invalidToken.footer">
+                <source>Your Website Team</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

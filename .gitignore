@@ -1,0 +1,10 @@
+.Build
+.idea
+.DS_Store
+.php_cs.cache
+var
+vendor
+composer.lock
+Build/testing-docker/.env
+composer-setup.php
+composer.phar

@@ -1,0 +1,62 @@
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
+.. This is 'Includes.txt'. It is included at the very top of each and
+   every ReST source file in this documentation project (= manual).
+
+
+.. ==================================================
+.. DEFINE SOME TEXT ROLES
+.. --------------------------------------------------
+
+.. role::   typoscript(code)
+
+.. role::   ts(typoscript)
+   :class:  typoscript
+
+.. role::   php(code)
+
+.. role::   yaml(code)
+
+.. role:: html(code)
+
+
+.. highlight:: php
+
+
+.. |img-gated_content_page_ts|      image:: /Images/Administration/gated_content_page_ts.png
+.. :border: 0
+.. :align: left
+.. :name: GatedContentPluginTs
+
+.. |img-gated_content_ff_gatedcontent|      image:: /Images/Administration/gated_content_ff_gatedcontent.png
+.. :border: 0
+.. :align: left
+.. :name: GatedContentFFcontent
+
+.. |img-gated_content_ff_form|      image:: /Images/Administration/gated_content_ff_form.png
+.. :border: 0
+.. :align: left
+.. :name: GatedContentFFform
+
+.. |img-gated_content_ff_finisher|      image:: /Images/Administration/gated_content_ff_finisher.png
+.. :border: 0
+.. :align: left
+.. :name: GatedContentFFfinisher
+
+.. |img-gated_content_ff_doubleOptIn|      image:: /Images/Administration/gated_content_ff_doubleOptIn.png
+.. :border: 0
+.. :align: left
+.. :name: GatedContentFFdoubleOptIn
+
+.. |img-gated_content_ff_adminConfirmation|      image:: /Images/Administration/gated_content_ff_adminConfirmation.png
+.. :border: 0
+.. :align: left
+.. :name: GatedContentFFadminConfirmation
+
+.. |img-gated_content_ff_template|      image:: /Images/Administration/gated_content_ff_template.png
+.. :border: 0
+.. :align: left
+.. :name: GatedContentFFtemplate

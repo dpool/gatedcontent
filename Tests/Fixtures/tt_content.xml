@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataset>
+    <tt_content>
+        <uid>1</uid>
+        <pid>1</pid>
+        <tstamp>1607011632</tstamp>
+        <crdate>1607011632</crdate>
+        <CType>list</CType>
+        <header>Gated content</header>
+        <list_type>gatedcontent_gate</list_type>
+        <pi_flexform>
+            <![CDATA[
+            <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3FlexForms>
+    <data>
+        <sheet index="gatedcontent">
+            <language index="lDEF">
+                <field index="settings.flexform.gatedcontent.identifier">
+                    <value index="vDEF">gated-content</value>
+                </field>
+                <field index="settings.flexform.gatedcontent.pid">
+                    <value index="vDEF">2</value>
+                </field>
+                <field index="settings.flexform.gatedcontent.userGroups">
+                    <value index="vDEF"></value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="formdata">
+            <language index="lDEF">
+                <field index="settings.flexform.firstNameEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.lastNameEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.companyEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.telephoneEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.zipEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.cityEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.legalNotice">
+                    <value index="vDEF">&lt;p&gt;I have read the general terms and conditions and agree to them.*&lt;/p&gt;</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="finisher">
+            <language index="lDEF">
+                <field index="settings.flexform.finisher.saveToDB.enable">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.finisher.emailRecipient">
+                    <value index="vDEF">testfinisher@dpool.com</value>
+                </field>
+                <field index="settings.flexform.finisher.emailSubject">
+                    <value index="vDEF">Subject finisher mail</value>
+                </field>
+                <field index="settings.flexform.finisher.emailBody">
+                    <value index="vDEF">&lt;p&gt;Dear admin,&lt;/p&gt;
+
+&lt;p&gt;The following data was submitted:&lt;/p&gt;
+&lt;p&gt;Name: {user.name}&lt;/p&gt;
+&lt;p&gt;Company: {user.company}&lt;/p&gt;
+&lt;p&gt;Telephone: {user.telephone}&lt;/p&gt;
+&lt;p&gt;Email: {user.email}&lt;/p&gt;
+&lt;p&gt;Zip: {user.zip}&lt;/p&gt;
+&lt;p&gt;City: {user.city}&lt;/p&gt;</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="doubleOptIn">
+            <language index="lDEF">
+                <field index="settings.flexform.doubleOptIn.enable">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.doubleOptIn.emailSubject">
+                    <value index="vDEF">Subject double-opt-in mail</value>
+                </field>
+                <field index="settings.flexform.doubleOptIn.emailBody">
+                    <value index="vDEF">double-opt-in-link: {link}</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="adminConfirmation">
+            <language index="lDEF">
+                <field index="settings.flexform.adminConfirmation.enable">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailRecipient">
+                    <value index="vDEF">testadmin@dpool.com</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailSubject.admin">
+                    <value index="vDEF">Admin: Confirmation Access</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailBody.admin">
+                    <value index="vDEF">&lt;p&gt;click to confirm the access to {identifier}: {link}&lt;/p&gt;
+
+&lt;p&gt;The following data was submitted:&lt;/p&gt;
+&lt;p&gt;Name: {user.name}&lt;/p&gt;
+&lt;p&gt;Company: {user.company}&lt;/p&gt;
+&lt;p&gt;Telephone: {user.telephone}&lt;/p&gt;
+&lt;p&gt;Email: {user.email}&lt;/p&gt;
+&lt;p&gt;Zip: {user.zip}&lt;/p&gt;
+&lt;p&gt;City: {user.city}&lt;/p&gt;</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailSubject.user">
+                    <value index="vDEF">Access confirmed</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailBody.user">
+                    <value index="vDEF">&lt;p&gt;an administrator has confirmed your request.&lt;/p&gt;
+&lt;p&gt;You can now see the requested content via the following link: {link}&lt;/p&gt;</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="template">
+            <language index="lDEF">
+                <field index="settings.flexform.gatedcontent.template">
+                    <value index="vDEF">1</value>
+                </field>
+            </language>
+        </sheet>
+    </data>
+</T3FlexForms>
+            ]]>
+        </pi_flexform>
+    </tt_content>
+
+    <tt_content>
+        <uid>2</uid>
+        <pid>4</pid>
+        <tstamp>1607011632</tstamp>
+        <crdate>1607011632</crdate>
+        <CType>list</CType>
+        <header>Gated content</header>
+        <list_type>gatedcontent_gate</list_type>
+        <pi_flexform>
+            <![CDATA[
+            <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3FlexForms>
+    <data>
+        <sheet index="gatedcontent">
+            <language index="lDEF">
+                <field index="settings.flexform.gatedcontent.identifier">
+                    <value index="vDEF">gated-content</value>
+                </field>
+                <field index="settings.flexform.gatedcontent.pid">
+                    <value index="vDEF">2</value>
+                </field>
+                <field index="settings.flexform.gatedcontent.userGroups">
+                    <value index="vDEF"></value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="formdata">
+            <language index="lDEF">
+                <field index="settings.flexform.firstNameEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.lastNameEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.companyEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.telephoneEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.zipEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.cityEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.legalNotice">
+                    <value index="vDEF">&lt;p&gt;I have read the general terms and conditions and agree to them.*&lt;/p&gt;</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="finisher">
+            <language index="lDEF">
+                <field index="settings.flexform.finisher.saveToDB.enable">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.finisher.emailRecipient">
+                    <value index="vDEF">testfinisher@dpool.com</value>
+                </field>
+                <field index="settings.flexform.finisher.emailSubject">
+                    <value index="vDEF">Subject finisher mail</value>
+                </field>
+                <field index="settings.flexform.finisher.emailBody">
+                    <value index="vDEF">&lt;p&gt;Dear admin,&lt;/p&gt;
+
+&lt;p&gt;The following data was submitted:&lt;/p&gt;
+&lt;p&gt;Name: {user.name}&lt;/p&gt;
+&lt;p&gt;Company: {user.company}&lt;/p&gt;
+&lt;p&gt;Telephone: {user.telephone}&lt;/p&gt;
+&lt;p&gt;Email: {user.email}&lt;/p&gt;
+&lt;p&gt;Zip: {user.zip}&lt;/p&gt;
+&lt;p&gt;City: {user.city}&lt;/p&gt;</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="doubleOptIn">
+            <language index="lDEF">
+                <field index="settings.flexform.doubleOptIn.enable">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.doubleOptIn.emailSubject">
+                    <value index="vDEF">Subject double-opt-in mail</value>
+                </field>
+                <field index="settings.flexform.doubleOptIn.emailBody">
+                    <value index="vDEF">double-opt-in-link: {link}</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="adminConfirmation">
+            <language index="lDEF">
+                <field index="settings.flexform.adminConfirmation.enable">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailRecipient">
+                    <value index="vDEF">testadmin@dpool.com</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailSubject.admin">
+                    <value index="vDEF">Admin: Confirmation Access</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailBody.admin">
+                    <value index="vDEF">&lt;p&gt;click to confirm the access to {identifier}: {link}&lt;/p&gt;
+
+&lt;p&gt;The following data was submitted:&lt;/p&gt;
+&lt;p&gt;Name: {user.name}&lt;/p&gt;
+&lt;p&gt;Company: {user.company}&lt;/p&gt;
+&lt;p&gt;Telephone: {user.telephone}&lt;/p&gt;
+&lt;p&gt;Email: {user.email}&lt;/p&gt;
+&lt;p&gt;Zip: {user.zip}&lt;/p&gt;
+&lt;p&gt;City: {user.city}&lt;/p&gt;</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailSubject.user">
+                    <value index="vDEF">Access confirmed</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailBody.user">
+                    <value index="vDEF">&lt;p&gt;an administrator has confirmed your request.&lt;/p&gt;
+&lt;p&gt;You can now see the requested content via the following link: {link}&lt;/p&gt;</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="template">
+            <language index="lDEF">
+                <field index="settings.flexform.gatedcontent.template">
+                    <value index="vDEF">1</value>
+                </field>
+            </language>
+        </sheet>
+    </data>
+</T3FlexForms>
+            ]]>
+        </pi_flexform>
+    </tt_content>
+
+    <tt_content>
+        <uid>3</uid>
+        <pid>7</pid>
+        <tstamp>1607011632</tstamp>
+        <crdate>1607011632</crdate>
+        <CType>list</CType>
+        <header>Gated content</header>
+        <list_type>gatedcontent_gate</list_type>
+        <pi_flexform>
+            <![CDATA[
+            <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3FlexForms>
+    <data>
+        <sheet index="gatedcontent">
+            <language index="lDEF">
+                <field index="settings.flexform.gatedcontent.identifier">
+                    <value index="vDEF">gated-content</value>
+                </field>
+                <field index="settings.flexform.gatedcontent.pid">
+                    <value index="vDEF">2</value>
+                </field>
+                <field index="settings.flexform.gatedcontent.userGroups">
+                    <value index="vDEF"></value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="formdata">
+            <language index="lDEF">
+                <field index="settings.flexform.firstNameEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.lastNameEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.companyEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.telephoneEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.zipEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.cityEnabled">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.legalNotice">
+                    <value index="vDEF">&lt;p&gt;I have read the general terms and conditions and agree to them.*&lt;/p&gt;</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="finisher">
+            <language index="lDEF">
+                <field index="settings.flexform.finisher.saveToDB.enable">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.finisher.emailRecipient">
+                    <value index="vDEF">testfinisher@dpool.com</value>
+                </field>
+                <field index="settings.flexform.finisher.emailSubject">
+                    <value index="vDEF">Subject finisher mail</value>
+                </field>
+                <field index="settings.flexform.finisher.emailBody">
+                    <value index="vDEF">&lt;p&gt;Dear admin,&lt;/p&gt;
+
+&lt;p&gt;The following data was submitted:&lt;/p&gt;
+&lt;p&gt;Name: {user.name}&lt;/p&gt;
+&lt;p&gt;Company: {user.company}&lt;/p&gt;
+&lt;p&gt;Telephone: {user.telephone}&lt;/p&gt;
+&lt;p&gt;Email: {user.email}&lt;/p&gt;
+&lt;p&gt;Zip: {user.zip}&lt;/p&gt;
+&lt;p&gt;City: {user.city}&lt;/p&gt;</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="doubleOptIn">
+            <language index="lDEF">
+                <field index="settings.flexform.doubleOptIn.enable">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.doubleOptIn.emailSubject">
+                    <value index="vDEF">Subject double-opt-in mail</value>
+                </field>
+                <field index="settings.flexform.doubleOptIn.emailBody">
+                    <value index="vDEF">double-opt-in-link: {link}</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="adminConfirmation">
+            <language index="lDEF">
+                <field index="settings.flexform.adminConfirmation.enable">
+                    <value index="vDEF">1</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailRecipient">
+                    <value index="vDEF">testadmin@dpool.com</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailSubject.admin">
+                    <value index="vDEF">Admin: Confirmation Access</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailBody.admin">
+                    <value index="vDEF">&lt;p&gt;click to confirm the access to {identifier}: {link}&lt;/p&gt;
+
+&lt;p&gt;The following data was submitted:&lt;/p&gt;
+&lt;p&gt;Name: {user.name}&lt;/p&gt;
+&lt;p&gt;Company: {user.company}&lt;/p&gt;
+&lt;p&gt;Telephone: {user.telephone}&lt;/p&gt;
+&lt;p&gt;Email: {user.email}&lt;/p&gt;
+&lt;p&gt;Zip: {user.zip}&lt;/p&gt;
+&lt;p&gt;City: {user.city}&lt;/p&gt;</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailSubject.user">
+                    <value index="vDEF">Access confirmed</value>
+                </field>
+                <field index="settings.flexform.adminConfirmation.emailBody.user">
+                    <value index="vDEF">&lt;p&gt;an administrator has confirmed your request.&lt;/p&gt;
+&lt;p&gt;You can now see the requested content via the following link: {link}&lt;/p&gt;</value>
+                </field>
+            </language>
+        </sheet>
+        <sheet index="template">
+            <language index="lDEF">
+                <field index="settings.flexform.gatedcontent.template">
+                    <value index="vDEF">1</value>
+                </field>
+            </language>
+        </sheet>
+    </data>
+</T3FlexForms>
+            ]]>
+        </pi_flexform>
+    </tt_content>
+
+</dataset>

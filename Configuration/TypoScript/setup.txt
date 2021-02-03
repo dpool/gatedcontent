@@ -1,0 +1,24 @@
+plugin.tx_gatedcontent {
+	view {
+		templateRootPaths {
+			0 = EXT:gatedcontent/Resources/Private/Templates/
+			1 = {$plugin.tx_gatedcontent.view.templateRootPath}
+		}
+
+		partialRootPaths {
+			0 = EXT:gatedcontent/Resources/Private/Partials/
+			1 = {$plugin.tx_gatedcontent.view.partialRootPath}
+		}
+
+		layoutRootPaths {
+			0 = EXT:gatedcontent/Resources/Private/Layouts/
+			1 = {$plugin.tx_gatedcontent.view.layoutRootPath}
+		}
+	}
+	persistence {
+		storagePid = {$plugin.tx_gatedcontent.persistence.storagePid}
+	}
+	settings{
+		tokenService.validityPeriod = {$plugin.tx_gatedcontent.settings.tokenService.validityPeriod}
+	}
+}

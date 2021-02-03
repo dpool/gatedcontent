@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-09-30T14:50:57Z" product-name="gatedcontent">
+        <header/>
+        <body>
+            <trans-unit id="flexform.formsettings.tab_gatedcontent">
+                <target>Geschützter Inhalt</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.gatedcontent_identifier">
+                <target>Bezeichner für geschützten Inhalt</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.gatedcontent_deliverMethod">
+                <target>Ausgelieferter Inhalt</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.gatedcontent_deliverMethod_1">
+                <target>Seite</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.gatedcontent_deliverMethod_2">
+                <target>Datei</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.gatedcontent_pid">
+                <target>Seite</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.gatedcontent_file">
+                <target>Datei</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.formsettings.tab_formdata">
+                <target>Formulardaten</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.firstName">
+                <target>Vorname</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.lastName">
+                <target>Nachname</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.company">
+                <target>Firma</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.telephone">
+                <target>Telefon</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.zip">
+                <target>PLZ</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.city">
+                <target>Stadt</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.newsletterSubscription">
+                <target>Newsletter-Abonnement</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.newsletterSubscriptionNotice">
+                <target>Hinweis zur Newsletter-Anmeldung</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.newsletterSubscriptionNotice_description">
+                <target>Z.B. Ja, ich möchte den Newsletter abonnieren.</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.legalNotice">
+                <target>Rechtliche Hinweise</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.legalNotice_description">
+                <target>Z.B. Ich habe die Allgemeinen Geschäftsbedingungen gelesen und erkläre mich mit ihnen einverstanden.*</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.formsettings.tab_finisher">
+                <target>Finisher</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.finisher_saveToDBenable">
+                <target>Leads in der Datenbank speichern</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.finisher_sendConfirmationEmail">
+                <target>Bestätigungsmail an den Administrator senden</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.finisher_emailRecipient">
+                <target>E-Mail-Empfänger (Administrator)</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.finisher_emailSubject">
+                <target>Betreff für E-Mail</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.finisher_emailBody">
+                <target>Bodytext für E-Mail</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.finisher_emailBody_description">
+                <target>Zum Beispiel:
+
+                    Lieber Administrator,
+
+                    die folgenden Daten für "{identifier}" wurden übermittelt:
+                    Vorname: {user.firstname}
+                    Nachname: {user.lastname}
+                    Firma: {user.company}
+                    Telefon: {user.telephone}
+                    E-Mail: {user.email}
+                    PLZ: {user.zip}
+                    Stadt: {user.city}
+                    Newsletter-Abonnement: {user.newslettersubscription}
+
+                </target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.tab_doubleOptIn">
+                <target>Double OptIn</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.doubleOptIn_enable">
+                <target>Der Benutzer muss die Aktivierung des geschützten Inhalts in einer zusätzlichen E-Mail bestätigen (Double OptIn).</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.doubleOptIn_emailSubject">
+                <target>Betreff für E-Mail an Benutzer</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.doubleOptIn_emailBody">
+                <target>Bodytext für E-Mail an Benutzer</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.doubleOptIn_emailBody_description">
+                <target>Zum Beispiel:
+
+                    Lieber Besucher,
+
+                    bitte klicken Sie auf den {link}, um Ihre E-Mail-Adresse zu bestätigen.
+
+                </target>
+            </trans-unit>
+
+            <trans-unit id="flexform.formsettings.tab_adminConfirmation">
+                <target>Admin-Bestätigung</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.adminConfirmation_enable">
+                <target>Die Aktivierung des geschützten Inhalts muss von einem Administrator bestätigt werden.</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.adminConfirmation_emailRecipient">
+                <target>E-Mail-Empfänger, der die Aktivierung des geschützten Inhalts bestätigen soll</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.adminConfirmation_emailSubject_admin">
+                <target>Betreff für E-Mail an Administrator</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.adminConfirmation_emailBody_admin">
+                <target>Bodytext für E-Mail an Administrator</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.adminConfirmation_emailBody_admin_description">
+                <target>Zum Beispiel:
+
+                    Lieber Administrator,
+
+                    bitte klicken Sie auf den {link}, um den Zugriff auf "{identifier}" zu bestätigen.
+
+                    Die folgenden Daten wurden übermittelt:
+                    Vorname: {user.firstname}
+                    Nachname: {user.lastname}
+                    Firma: {user.company}
+                    Telefon: {user.telephone}
+                    E-Mail: {user.email}
+                    PLZ: {user.zip}
+                    Stadt: {user.city}
+                    Newsletter-Abonnement: {user.newslettersubscription}
+
+                </target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.adminConfirmation_emailSubject_user">
+                <target>Betreff für E-Mail an Benutzer nach Admin-Bestätigung</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.adminConfirmation_emailBody_user">
+                <target>Bodytext für E-Mail an Benutzer nach Admin-Bestätigung</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.adminConfirmation_emailBody_user_description">
+                <target>Zum Beispiel:
+
+                    Lieber Benutzer,
+
+                    ein Administrator hat Ihre Anfrage bestätigt.
+
+                    Sie können nun den angeforderten Inhalt über den folgenden {link} sehen.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="flexform.formsettings.tab_template">
+                <target>Template</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.template.templateLayout">
+                <target>Template Layout</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.template.templateLayout.1">
+                <target>2 Spalten</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.template.templateLayout.2">
+                <target>1 Spalte</target>
+            </trans-unit>
+            <trans-unit id="flexform.formsettings.template.templateLayout.3">
+                <target>Minimalist</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

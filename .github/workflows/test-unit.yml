@@ -1,0 +1,18 @@
+name: testing
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: [ '7.2', '7.3', '7.4' ]
+        minMax: [ 'composerInstallMax' ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+      - name: Prepare
+        run: ./Build/Scripts/runTests.sh -p ${{ matrix.php }} -s ${{ matrix.minMax }}
+      - name: Unit tests
+        run: ./Build/Scripts/runTests.sh -p ${{ matrix.php }} -s unit
+      - name: Acceptance tests
+        run: ./Build/Scripts/runTests.sh -p ${{ matrix.php }} -s acceptance

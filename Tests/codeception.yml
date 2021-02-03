@@ -1,0 +1,21 @@
+namespace: Dpool\Gatedcontent\Tests\Acceptance\Support
+paths:
+  tests: Acceptance
+  data: .
+  log: ../.Build/Web/typo3temp/var/tests/AcceptanceReports
+  support: Acceptance/Support
+  # envs: ../Tests/Acceptance/_envs
+settings:
+  colors: true
+  memory_limit: 1024M
+extensions:
+  enabled:
+    - Codeception\Extension\RunFailed
+    - Codeception\Extension\Recorder
+modules:
+  enabled:
+    - MailHog
+  config:
+    MailHog:
+      url: 'mailhog'
+      port: '8025'

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataset>
+    <sys_template>
+        <uid>1</uid>
+        <pid>1</pid>
+        <tstamp>1607011632</tstamp>
+        <crdate>1607011632</crdate>
+        <title>Gatedcontent</title>
+        <root>1</root>
+        <clear>3</clear>
+        <include_static_file>EXT:fluid_styled_content/Configuration/TypoScript/,EXT:fluid_styled_content/Configuration/TypoScript/Styling/,EXT:gatedcontent/Configuration/TypoScript</include_static_file>
+        <config>
+            <![CDATA[
+            # Default PAGE object:
+            page = PAGE
+            page.10 < styles.content.get
+            page.headerData.10 = TEXT
+            page.headerData.10.value = <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+            config.contentObjectExceptionHandler = 0
+            ]]>
+        </config>
+    </sys_template>
+</dataset>

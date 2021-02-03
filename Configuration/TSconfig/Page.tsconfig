@@ -1,0 +1,16 @@
+mod {
+    wizards.newContentElement.wizardItems.plugins {
+        elements {
+            gatedcontent_gate {
+                iconIdentifier = gatedcontent_gate
+                title = LLL:EXT:gatedcontent/Resources/Private/Language/locallang_db.xlf:tx_gatedcontent.plugin
+                description = LLL:EXT:gatedcontent/Resources/Private/Language/locallang_db.xlf:tx_gatedcontent.plugin.description
+                tt_content_defValues {
+                    CType = list
+                    list_type = gatedcontent_gate
+                }
+            }
+        }
+        show := addToList(gatedcontent_gate)
+    }
+}

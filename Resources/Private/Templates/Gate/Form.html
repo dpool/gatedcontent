@@ -1,0 +1,137 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="{dataUid}_true">
+
+<f:layout name="Default"/>
+
+<f:section name="main">
+
+    <f:if condition="{triggerModal} == 1">
+        <f:render partial="Modal" arguments="{_all}"/>
+    </f:if>
+
+    <f:variable name="containerRowColClass1">col-12</f:variable>
+    <f:variable name="containerRowColClass2">col-12</f:variable>
+    <f:variable name="formClass">bg-light p-5</f:variable>
+
+    <f:switch expression="{templateLayout}">
+        <f:case value="1">
+            <f:variable name="containerRowColClass1">col-12 col-lg-6</f:variable>
+            <f:variable name="containerRowColClass2">col-12 col-lg-6 d-flex</f:variable>
+        </f:case>
+        <f:case value="2"></f:case>
+        <f:case value="3">
+            <f:variable name="formClass"></f:variable>
+        </f:case>
+    </f:switch>
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="{containerRowColClass1}">
+                <f:render section="additionalData" arguments="{_all}" />
+            </div>
+            <div class="{containerRowColClass2}">
+                <f:form class="tx-gatedcontent-form {formClass}"
+                        name="userData"
+                        action="processForm"
+                        object="{userData}"
+                        method="post">
+                    <f:form.hidden name="uid" value="{dataUid}" />
+                    <div class="row">
+                        <f:if condition="{validationError}">
+                            <div class="col-12">
+                                <div class="validation-error alert alert-danger mb-3">
+                                    <f:translate key="tx_gatedcontent.error.validation" />
+                                </div>
+                            </div>
+                        </f:if>
+                        <f:if condition="{settings.flexform.firstNameEnabled}">
+                            <div class="col-12 mb-3">
+                                <label for="{dataUid}_firstName" class="form-label"><f:translate key="tx_gatedcontent.form.field.firstName" /><span class="required">*</span></label>
+                                <f:form.textfield property="firstName" id="{dataUid}_firstName" class="form-control" additionalAttributes="{required: 'required'}"/>
+                                <f:render partial="FormError" arguments="{errorField: 'firstName'}" />
+                            </div>
+                        </f:if>
+                        <f:if condition="{settings.flexform.lastNameEnabled}">
+                            <div class="col-12 mb-3">
+                                <label for="{dataUid}_lastName" class="form-label"><f:translate key="tx_gatedcontent.form.field.lastName" /><span class="required">*</span></label>
+                                <f:form.textfield property="lastName" id="{dataUid}_lastName" class="form-control" additionalAttributes="{required: 'required'}"/>
+                                <f:render partial="FormError" arguments="{errorField: 'lastName'}" />
+                            </div>
+                        </f:if>
+                        <div class="col-12 mb-3">
+                            <label for="{dataUid}_email"class="form-label"><f:translate key="tx_gatedcontent.form.field.email" /><span class="required">*</span></label>
+                            <f:form.textfield property="email" id="{dataUid}_email" class="form-control" additionalAttributes="{required: 'required'}"/>
+                            <f:render partial="FormError" arguments="{errorField: 'email'}" />
+                        </div>
+                        <f:if condition="{settings.flexform.companyEnabled}">
+                            <div class="col-12 mb-3">
+                                <label for="{dataUid}_company" class="form-label"><f:translate key="tx_gatedcontent.form.field.company" /><span class="required">*</span></label>
+                                <f:form.textfield property="company" id="{dataUid}_company" class="form-control" additionalAttributes="{required: 'required'}"/>
+                                <f:render partial="FormError" arguments="{errorField: 'company'}" />
+                            </div>
+                        </f:if>
+                        <f:if condition="{settings.flexform.telephoneEnabled}">
+                            <div class="col-12 mb-3">
+                                <label for="{dataUid}_telephone" class="form-label"><f:translate key="tx_gatedcontent.form.field.telephone" /><span class="required">*</span></label>
+                                <f:form.textfield property="telephone" id="{dataUid}_telephone" class="form-control" additionalAttributes="{required: 'required'}"/>
+                                <f:render partial="FormError" arguments="{errorField: 'telephone'}" />
+                            </div>
+                        </f:if>
+                        <f:if condition="{settings.flexform.zipEnabled}">
+                            <div class="col-4 mb-3">
+                                <label for="{dataUid}_zip" class="form-label"><f:translate key="tx_gatedcontent.form.field.zip" /><span class="required">*</span></label>
+                                <f:form.textfield property="zip" id="{dataUid}_zip" class="form-control" additionalAttributes="{required: 'required'}"/>
+                                <f:render partial="FormError" arguments="{errorField: 'zip'}" />
+                            </div>
+                        </f:if>
+                        <f:if condition="{settings.flexform.cityEnabled}">
+                            <div class="col-8 mb-3">
+                                <label for="{dataUid}_city" class="form-label"><f:translate key="tx_gatedcontent.form.field.city" /><span class="required">*</span></label>
+                                <f:form.textfield property="city" id="{dataUid}_city" class="form-control" additionalAttributes="{required: 'required'}"/>
+                                <f:render partial="FormError" arguments="{errorField: 'city'}" />
+                            </div>
+                        </f:if>
+                        <f:if condition="{settings.flexform.newsletterSubscriptionEnabled}">
+                            <div class="col-12 mt-3">
+                                <div class="form-check">
+                                    <f:form.checkbox property="newsletterSubscription" id="{dataUid}_newsletterSubscription" class="form-check-input" value="1"/>
+                                    <label class="form-check-label" for="{dataUid}_newsletterSubscription">
+                                        <f:format.raw>{settings.flexform.newsletterSubscriptionNotice}</f:format.raw>
+                                    </label>
+                                </div>
+                            </div>
+                        </f:if>
+                        <div class="col-12 my-3">
+                            <div class="form-check">
+                                <f:render partial="FormError" arguments="{errorField: 'acceptPrivacyPolicy'}" />
+                                <f:form.checkbox property="acceptPrivacyPolicy" id="{dataUid}_acceptPrivacyPolicy" class="form-check-input" value="1" additionalAttributes="{required: 'required'}"/>
+                                <label class="form-check-label" for="{dataUid}_acceptPrivacyPolicy">
+                                    <f:format.raw>{settings.flexform.legalNotice}</f:format.raw>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <p><f:translate key="tx_gatedcontent.form.required" /></p>
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary"><f:translate key="tx_gatedcontent.form.submit" /></button>
+                        </div>
+                    </div>
+                </f:form>
+            </div>
+        </div>
+    </div>
+</f:section>
+
+
+<f:section name="additionalData">
+    <f:if condition="{tx_gatedcontent_header}"><h2>{tx_gatedcontent_header}</h2></f:if>
+    <f:if condition="{tx_gatedcontent_subheader}"><h3>{tx_gatedcontent_subheader}</h3></f:if>
+    <f:if condition="{tx_gatedcontent_description}"><f:format.html>{tx_gatedcontent_description}</f:format.html></f:if>
+    <f:if condition="{templateLayout}!=3 && {gatedcontent_images}">
+        <f:for each="{gatedcontent_images}" as="image">
+            <f:image image="{image}" class="img-fluid w-100" />
+        </f:for>
+    </f:if>
+</f:section>

@@ -1,0 +1,7 @@
+<f:form.validationResults for="userData">
+    <f:if condition="{validationResults.flattenedErrors.{errorField}}">
+        <p class="text-danger m-0">
+            <f:translate key="tx_gatedcontent.{errorField}.error.{validationResults.flattenedErrors.{errorField}.0.code}">{validationResults.flattenedErrors.{errorField}.0.code}</f:translate>
+        </p>
+    </f:if>
+</f:form.validationResults>

@@ -118,7 +118,10 @@ class FlexformSettings
         return $this->settings['finisher']['emailBody'];
     }
 
-    public function finisherEmailRecipient(): string
+    /**
+     * @return string|null
+     */
+    public function finisherEmailRecipient()
     {
         return $this->settings['finisher']['emailRecipient'];
     }

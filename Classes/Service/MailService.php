@@ -37,7 +37,6 @@ class MailService
         $this->mailMessage
             ->subject($subject)
             ->setFrom(MailUtility::getSystemFrom())
-            ->from(Address::create(...MailUtility::getSystemFrom()))
             ->to(Address::create($to))
             ->html($body, 'text/html');
 

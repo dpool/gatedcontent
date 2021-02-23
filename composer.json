@@ -1,10 +1,10 @@
 {
   "name": "dpool/gatedcontent",
   "type": "typo3-cms-extension",
-  "description": "Gatedcontent Extensions",
+  "description": "Gatedcontent is lead-capture extension for TYPO3. The extension provides editors with a configurable form element to collect user data. In exchange for personal information like e-mail address, name, company etc., visitors can access downloads or a single TYPO3 page.",
   "homepage": "https://www.github.com/dpool/gatedcontent/",
   "license": [
-    "GPL-2.0+"
+    "GPL-2.0-or-later"
   ],
   "keywords": [
     "TYPO3 CMS"

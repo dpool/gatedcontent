@@ -9,7 +9,7 @@
 
 $EM_CONF['gatedcontent'] = array(
     'title' => 'Gatedcontent',
-    'description' => 'Gatedcontent',
+    'description' => 'Gatedcontent is lead-capture extension for TYPO3. The extension provides editors with a configurable form element to collect user data. In exchange for personal information like e-mail address, name, company etc., visitors can access downloads or a single TYPO3 page.',
     'category' => 'plugin',
     'author' => 'Daniel Thomas, Andreas Habel, Andrea Hildebrand, Markus Winter',
     'author_email' => 'dev@dpool.com',
@@ -18,7 +18,7 @@ $EM_CONF['gatedcontent'] = array(
     'uploadfolder' => '1',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '0.0.1',
+    'version' => '1.0.0',
     'constraints' => array(
         'depends' => array(
             'typo3' => '10.4.0 - 10.4.99'

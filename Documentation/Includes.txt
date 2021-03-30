@@ -31,32 +31,42 @@
 .. :align: left
 .. :name: GatedContentPluginTs
 
-.. |img-gated_content_ff_gatedcontent|      image:: /Images/Administration/gated_content_ff_gatedcontent.png
+.. |img-gated_content_ff_gatedcontent|      image:: /Images/Flexform/gated_content_ff_gatedcontent.png
 .. :border: 0
 .. :align: left
 .. :name: GatedContentFFcontent
 
-.. |img-gated_content_ff_form|      image:: /Images/Administration/gated_content_ff_form.png
+.. |img-gated_content_ff_form|      image:: /Images/Flexform/gated_content_ff_form.png
 .. :border: 0
 .. :align: left
 .. :name: GatedContentFFform
 
-.. |img-gated_content_ff_finisher|      image:: /Images/Administration/gated_content_ff_finisher.png
+.. |img-gated_content_ff_finisher|      image:: /Images/Flexform/gated_content_ff_finisher.png
 .. :border: 0
 .. :align: left
 .. :name: GatedContentFFfinisher
 
-.. |img-gated_content_ff_doubleOptIn|      image:: /Images/Administration/gated_content_ff_doubleOptIn.png
+.. |img-gated_content_ff_doubleOptIn|      image:: /Images/Flexform/gated_content_ff_doubleOptIn.png
 .. :border: 0
 .. :align: left
 .. :name: GatedContentFFdoubleOptIn
 
-.. |img-gated_content_ff_adminConfirmation|      image:: /Images/Administration/gated_content_ff_adminConfirmation.png
+.. |img-gated_content_ff_adminConfirmation|      image:: /Images/Flexform/gated_content_ff_adminConfirmation.png
 .. :border: 0
 .. :align: left
 .. :name: GatedContentFFadminConfirmation
 
-.. |img-gated_content_ff_template|      image:: /Images/Administration/gated_content_ff_template.png
+.. |img-gated_content_ff_template|      image:: /Images/Flexform/gated_content_ff_template.png
 .. :border: 0
 .. :align: left
 .. :name: GatedContentFFtemplate
+
+.. |img-gated_content_frontend_1column|      image:: /Images/Frontend/gated_content_frontend_1column.png
+.. :border: 0
+.. :align: left
+.. :name: GatedContentFrontend1Column
+
+.. |img-gated_content_frontend|      image:: /Images/Frontend/gated_content_frontend.png
+.. :border: 0
+.. :align: left
+.. :name: GatedContentFrontend

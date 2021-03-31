@@ -37,8 +37,16 @@ class TokenAuthService extends AbstractAuthenticationService
      */
     public function authUser(array $user): int
     {
+        $encodedToken = $this->getRequestToken();
+
         // We only care about frontend authentication
-        if ($this->mode !== 'authUserFE' || !$this->getRequestToken()) {
+        if ($this->mode !== 'authUserFE' || !$encodedToken) {
+            return 100;
+        }
+
+        try {
+            $this->tokenService->validate($encodedToken, 'showMagicContent');
+        } catch (Exception $e) {
             return 100;
         }
 

@@ -143,6 +143,7 @@ class GateController extends ActionController
         $this->view->assign('tx_gatedcontent_header', $data['tx_gatedcontent_header']);
         $this->view->assign('tx_gatedcontent_subheader', $data['tx_gatedcontent_subheader']);
         $this->view->assign('tx_gatedcontent_description', $data['tx_gatedcontent_description']);
+        $this->view->assign('dataUid', $data['uid']);
 
         $files = $this->fileRepository->findByRelation('tt_content', 'tx_gatedcontent_image', $data['uid']);
         $this->view->assign('gatedcontent_images', $files);
